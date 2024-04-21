@@ -14,10 +14,10 @@ const IndexPage: Page = () => {
     /**
      * Create new Data
      */
-    function onSubmit(newData){
+    function onSubmit(newQueue){
         const rand = Math.floor(Math.random() * 3);
         const updateQueue = queue.slice(0);
-        updateQueue[rand]?.push(newData.queue);
+        updateQueue[rand]?.push(newQueue.queue);
         
         setQueue(updateQueue)
     }
